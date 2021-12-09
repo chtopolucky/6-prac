@@ -1,0 +1,34 @@
+﻿<Window x:Class="Пр5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Пр5"
+        mc:Ignorable="d"
+        Title="Практическая работа №5" Height="383" Width="553.832" Icon="Recycle Bin Full4.ico" Background="White" ResizeMode="CanMinimize">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="19" VerticalAlignment="Top" Width="548">
+            <MenuItem Header="Файл" Width="50">
+                <MenuItem Header="Рассчитать" Click="Answer_Click"></MenuItem>
+                <MenuItem Header="Очистить" Click="Clear_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="О программе" Click="Info_Click" Width="94"></MenuItem>
+            <MenuItem Header="Выход" Click="Exit_Click" Width="49"/>
+        </Menu>
+        <Label Content="Второе произведение" HorizontalAlignment="Left" Margin="365,151,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label Content="Первое произведение" HorizontalAlignment="Left" Margin="30,151,0,0" VerticalAlignment="Top" Width="141"/>
+        <Label Content="Вторая пара чисел" HorizontalAlignment="Left" Margin="196,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.763,-1.288" Width="153" Height="37" FontSize="16"/>
+        <Label Content="Первая пара чисел" HorizontalAlignment="Left" Margin="196,41,0,0" VerticalAlignment="Top" Height="31" Width="153" FontSize="16"/>
+        <TextBox x:Name="rezultMultiplyingSecondPair" HorizontalAlignment="Left" Height="37" Margin="365,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="White" BorderBrush="Black" FontSize="20" IsReadOnly="True"/>
+        <TextBox x:Name="OneValue" HorizontalAlignment="Left" Height="37" Margin="30,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="White" BorderBrush="Black" FontSize="20"/>
+        <TextBox x:Name="ThirdValue" HorizontalAlignment="Left" Height="37" Margin="30,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="White" BorderBrush="Black" FontSize="20"/>
+        <TextBox x:Name="TwoValue" HorizontalAlignment="Left" Height="37" Margin="365,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" BorderBrush="Black" Background="White" FontSize="20"/>
+        <TextBox x:Name="FourValue" HorizontalAlignment="Left" Height="37" Margin="365,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Background="White" BorderBrush="Black" FontSize="20"/>
+        <TextBox x:Name="rezultMultiplyingFirstPair" HorizontalAlignment="Left" Height="36" Margin="30,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" Background="White" BorderBrush="Black" FontSize="20" IsReadOnly="True"/>
+        <Button x:Name="Answer" Content="Рассчитать" HorizontalAlignment="Left" Margin="208,182,0,0" VerticalAlignment="Top" Width="128" Height="37" Click="Answer_Click" Background="#FFA2A2A2" BorderBrush="Black" FontSize="14"/>
+        <Button Content="Удвоить первую пару " HorizontalAlignment="Left" Margin="30,239,0,0" VerticalAlignment="Top" Width="141" Height="40" Background="#FFA5A5A5" BorderBrush="Black" FontSize="13" Click="DoubleFirstPair_Click"/>
+        <Button Content="Удвоить вторую пару" HorizontalAlignment="Left" Margin="365,239,0,0" VerticalAlignment="Top" Height="40" Width="141" Foreground="Black" BorderBrush="Black" Background="#FFA7A7A7" Click="DoubleSecondPair_Click"/>
+        <TextBox x:Name="DoubleFirstPair" HorizontalAlignment="Left" Margin="30,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="39" FontSize="20" BorderBrush="Black"/>
+        <TextBox x:Name="DoubleSecondPair" HorizontalAlignment="Left" Margin="365,299,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="141" Height="39" FontSize="20" BorderBrush="Black"/>
+    </Grid>
+</Window>
